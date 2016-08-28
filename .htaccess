@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    IndexIgnore */*
+    RewriteEngine on
+
+    # other requests add /frontend/web/$1
+    RewriteCond %{REQUEST_URI} !^/(public|api)
+    RewriteRule (.*) /public/$1
+
+    # if frontend request
+    RewriteCond %{REQUEST_URI} ^/public
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /public/index.php
+
+    # if backend request
+    RewriteCond %{REQUEST_URI} ^/api
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /api/index.php
+</IfModule>

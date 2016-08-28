@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2196f3">
+    <title>My App</title>
+    <link rel="stylesheet" href="public/css/framework7.material.min.css">
+    <link rel="stylesheet" href="public/css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="public/css/my-app.css">
+</head>
+<body class="layout-inverse theme-deeporange">
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+<div class="panel panel-right panel-reveal">
+    <div class="view view-right">
+        <div class="pages navbar-fixed">
+            <div data-page="panel-right1" class="page page-inverse">
+                <div class="navbar theme-deeporange">
+                    <div class="navbar-inner">
+                        <div class="center">Личный кабинет</div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="content-block">
+                        <p>Здесь вы можете посмотреть свою статистику, а также получить навыки за достижения целей
+                            игры.</p>
+                    </div>
+                    <div class="list-block">
+                        <ul>
+
+                            <li>
+                                <a href="stats.html" class="item-link">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon icon-stats"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Статистика</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="stats.html" class="item-link">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon icon-achievement"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Достижения</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="stats.html" class="item-link">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon icon-gear"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Настройки</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="views">
+    <div class="view view-main navbar-fixed">
+        <div class="pages">
+            <div data-page="index" class="page page-main tabbar-labels-fixed">
+
+                <div class="navbar main-navbar" id="main-navbar">
+                    <div class="navbar-inner">
+                        <div class="center">Барыга</div>
+                        <div class="right">
+                            <a href="messages.html" class="link icon-only">
+                                <i class="icon icon-form-tel"></i>
+                            </a>
+                            <a href="shop.html" class="link icon-only">
+                                <i class="icon icon-shop"></i>
+                            </a>
+                            <a href="#" data-panel="right" class="link open-panel icon-only">
+                                <i class="icon icon-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toolbar toolbar-bottom tabbar tabbar-labels">
+                    <div class="toolbar-inner">
+                        <a href="#tab-1" class="tab-link active">
+                            <i class="icon icon-garage"></i>
+                            <span class="tabbar-label">Гараж</span>
+                        </a>
+                        <a href="#tab-2" class="tab-link">
+                            <i class="icon icon-carshop"></i>
+                            <span class="tabbar-label">Авторынок</span>
+                        </a>
+                        <a href="#tab-3" class="tab-link">
+                            <i class="icon icon-build"></i>
+                            <span class="tabbar-label">Сервис</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="page-content">
+                    <div class="tabs">
+                        <div id="tab-1" class="tab active">
+                            <div class="content-block">
+                                <p>Ваш гараж</p>
+                                <p>Пока здесь ничего нет, но скоро он будет заполнен автомобилями :)</p>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab">
+                            <div class="content-block row" id="carshop"></div>
+                        </div>
+                        <div id="tab-3" class="tab">
+                            <div class="content-block">
+                                <p>Автосервис</p>
+                                <p>Здесь Вы можете отремонтировать битые автомобили, а также заменить расходники и провести т.о.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="public/js/framework7.min.js"></script>
+<script type="text/javascript" src="public/js/my-app.js"></script>
+</body>
+</html>

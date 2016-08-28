@@ -1,0 +1,131 @@
+.layout-inverse .page-main {
+    color: rgba(255, 255, 255, .87);
+    background: url('../img/bg.jpg') no-repeat fixed;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.layout-inverse .page-inverse {
+    color: rgba(255, 255, 255, .87);
+    background-color: #2a2a2a;
+}
+
+.layout-inverse .messagebar {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    background: #fff;
+    height: 48px;
+    top: auto;
+    bottom: 0;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.messages-popover {
+    color: rgb(169, 169, 169);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.main-navbar-show {
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -ms-transition: background-color .2s;
+    -o-transition: background-color .2s;
+    transition: background-color .2s;
+}
+
+.main-navbar {
+    background-color: transparent !important;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -ms-transition: background-color .2s;
+    -o-transition: background-color .2s;
+    transition: background-color .2s;
+}
+
+.tabs {
+    padding-top: 64px;
+}
+
+
+i.icon.icon-menu {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/i-form-menu-material.svg");
+}
+
+i.icon.icon-carshop {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/i-form-carshop-material.svg");
+}
+
+i.icon.icon-garage {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/i-form-garage-material.svg");
+}
+
+i.icon.icon-stats {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/i-form-stats-material.svg");
+}
+
+i.icon.icon-build {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/i-form-build-material.svg");
+}
+
+i.icon.icon-achievement {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/i-form-achievement-material.svg");
+}
+
+i.icon.icon-gear {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/i-form-gear-material.svg");
+}
+
+i.icon.icon-shop {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/i-form-shop-material.svg");
+}
+
+.carshop-card-header-pic .card-header {
+    height: 60vw;
+    background-size: cover;
+    background-position: center;
+}
+
+label.price {
+    font-weight: 600;
+    right: 0;
+    padding: 6px 10px;
+    position: absolute;
+    display: inline-block;
+    margin-left: 15px;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1000;
+    border-bottom-left-radius: 3px;
+}
+
+.carshop-card .card-content-inner {
+    color: #333;
+    padding: 15px 10px;
+}
+
+.carshop-card .card-footer {
+    background: #fafafa;
+}
+
+.carshop-card .card-footer a {
+    color: #81848b;
+    font-weight: 500;
+}
